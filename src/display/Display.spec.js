@@ -10,7 +10,10 @@ describe('<Display />', () => {
   it('displays expected value', () => {
     render(<Display closed={true} locked={false} />)
   })
-  it('logic is working', () => {
+  it('red-led class is working', () => {
     render(<Display closed={true} locked={true} ClassName="red-led" />)
+  })
+  it('green-led class is working', () => {
+    render(<Display open={true} locked={false} ClassName="green-led" />)
   })
 })
